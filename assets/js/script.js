@@ -120,21 +120,59 @@
         });
 
 
-        // ## Project Filtering
-        $(".project-filter li").on('click', function () {
-            $(".project-filter li").removeClass("current");
-            $(this).addClass("current");
-
-            var selector = $(this).attr('data-filter');
-            $('.project-active').imagesLoaded(function () {
+        $(document).ready(function () {
+            // Select the first filter by default
+            const firstFilter = $(".project-filter li").first();
+            firstFilter.addClass("current");
+        
+            const defaultSelector = firstFilter.attr('data-filter');
+            $(".project-active").imagesLoaded(function () {
                 $(".project-active").isotope({
                     itemSelector: '.item',
-                    filter: selector,
-                }); 
+                    filter: defaultSelector, // Apply the default filter
+                });
             });
-
+        
+            // Filtering logic
+            $(".project-filter li").on("click", function () {
+                $(".project-filter li").removeClass("current");
+                $(this).addClass("current");
+        
+                var selector = $(this).attr("data-filter");
+                $(".project-active").isotope({
+                    filter: selector,
+                });
+            });
+        });
+        $(document).ready(function () {
+            // Select the first filter by default
+            const firstFilter = $(".project-filter1 li").first();
+            firstFilter.addClass("current");
+        
+            const defaultSelector = firstFilter.attr('data-filter');
+            $(".project-active1").imagesLoaded(function () {
+                $(".project-active1").isotope({
+                    itemSelector: '.item',
+                    filter: defaultSelector, // Apply the default filter
+                });
+            });
+        
+            // Filtering logic
+            $(".project-filter1 li").on("click", function () {
+                $(".project-filter1 li").removeClass("current");
+                $(this).addClass("current");
+        
+                var selector = $(this).attr("data-filter");
+                $(".project-active1").isotope({
+                    filter: selector,
+                });
+            });
         });
 
+
+
+
+        
 
         // ## Timeline Images
         if ($('.timeline-images').length) {

@@ -290,9 +290,10 @@ button.load-more{
 }
 
 .theme-btn{
-  padding: 8px 20px;
-  background:var(--heading-color);
+  padding: 2px 10px;
+  background: var(--heading-color);
   color: var(--black-100);
+  font-size: 14px;
 }
 /*******************************************************/
 /******************  ## Common Classes *****************/
@@ -563,7 +564,7 @@ a.theme-btn i {
 
 /** Tab Style One **/
 ul.nav-pills.tab-style-one{
-  margin-left: auto;
+  margin-left: 0px;
   margin-right: auto;
   width: fit-content;
   max-width: 100%;
@@ -574,7 +575,7 @@ ul.nav-pills.tab-style-one li{
 }
 
 ul.nav-pills.tab-style-one .nav-link{
-  padding: 13px 45px;
+  /* padding: 13px 45px; */
   font-weight: 600;
 }
 
@@ -1025,6 +1026,7 @@ h2, .h2 {
   h6, .h6 {
     line-height: 1.5;
     font-size: 20px;
+    font-weight: 600;
   }
 }
 
@@ -5138,6 +5140,7 @@ button.read-more{
 
 .pro-img{
   position: relative;
+  
 }
 
 @media only screen and (max-width: 991px) {
@@ -5257,6 +5260,9 @@ button.read-more{
 @media (min-width: 768px) and (max-width: 991px) {
   .projects-05 .tab-content h3{
     font-size: 22px;
+  }
+  .content-div h5{
+    padding-top: 20px;
   }
 }
 
@@ -5379,8 +5385,8 @@ button.read-more{
 }
 
 .related-projects .row{
-  justify-content: center;
-  align-items: center; 
+  /* justify-content: center;
+  align-items: center;  */
 }
 
 .related-projects img{
@@ -7502,41 +7508,7 @@ blockquote cite.name {
   letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 480px) {
-  .header-top {
-    padding: 16px 0;
-    display: none;
-  }
-  .ct-form {
-    padding: 46px 25px;
-    background: var(--heading-color);
-}
-  .py-128 {
-     padding: 70px 0;
-   }
-   .projects-04 h2 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-   .project-filter {
-    margin-bottom: 20px;
-   }
-   .pt-140, .py-140 {
-    padding-top: 80px;
-}
-.timeline-area .timeline-images .content {
-  background: #14002e;
-  padding: 20px;
-  height: fit-content;
-  width: 78% !important;
 
-}
-.cta-content h2 {
-  line-height: 1.3;
-  font-size: 32px;
-  letter-spacing: 1px;
-}
-}
 .logo img{
   width: 160px;
 }
@@ -7862,7 +7834,7 @@ background:none !important;
   margin-bottom: 10px;
 }
 .contact-banner{
-  padding: 100px;
+  padding: 100px 0px;
 }
 .service-area-2{
   padding: 60px 0px;
@@ -7897,4 +7869,95 @@ background:none !important;
 }
 .usage-div ul li{
   list-style-type: disc;
+}
+.usage-div ul {
+  padding-left: 40px;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #a9a9a9;
+}
+.table {
+  border: 1px solid #a9a9a9;
+}
+.table>:not(caption)>*>* {
+  border: 1px solid #9b9b9b;
+}
+.prod-img{
+  position: relative;
+  padding-top: 15px;
+  border: 1px solid #898989;
+  text-align: center;
+  /* margin-top: 40px; */
+  margin-right: 50px;
+}
+.content hr{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.aaa-div{
+  height: 250px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-top {
+    padding: 16px 0;
+    display: none;
+  }
+  .prod-img {
+    margin-right: 0px;
+}
+  .ct-form {
+    padding: 46px 25px;
+    background: var(--heading-color);
+}
+  .py-128 {
+     padding: 70px 0;
+   }
+   .projects-04 h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+   .project-filter {
+    margin-bottom: 20px;
+   }
+   .pt-140, .py-140 {
+    padding-top: 80px;
+}
+.timeline-area .timeline-images .content {
+  background: #14002e;
+  padding: 20px;
+  height: fit-content;
+  width: 78% !important;
+
+}
+.cta-content h2 {
+  line-height: 1.3;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.content-div h5{
+  padding-top: 20px;
+}
+.related-projects {
+  padding-bottom: 0px;
+}
+.contact-banner {
+  padding: 50px 0px;
+}
+.contact-title h1 {
+  font-size: 30px;
+}
+.blog-home .blog-item .image img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+}
+.blog-area {
+  padding-top: 45px;
+  padding-bottom: 0px;
+}
+.blog-home .blog-item {
+  padding: 13px 16px;
+}
 }
