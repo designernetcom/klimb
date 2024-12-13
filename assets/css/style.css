@@ -8015,12 +8015,14 @@ background:none !important;
   .contact-form1 textarea{
     width: 100%;
     height: auto;
-    padding: 0px 13px;
+    padding: 4px 13px;
+    background: #fff;
   }
   .contact-form1 input{
     width: 100%;
     height: auto;
-    padding: 0px 13px;
+    padding: 4px 13px;
+    background: #fff;
   }
   .contact-form1 input::placeholder{
    font-size: 15px;

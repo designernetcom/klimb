@@ -463,21 +463,21 @@
 //   });
 
     
-$('.contact-btn').bind('click', function () {
+$('.contact-btn1').bind('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $('.contact-form').animate({
+      $('.contact-form1').animate({
         right: '-450px'
       });
     } else {
-      $('.contact-form').animate({
+      $('.contact-form1').animate({
         right: '0'
       });
       $(this).addClass('active');
     }
   });
   $('.close-btn').bind('click', function () {
-    $('.contact-form').animate({
+    $('.contact-form1').animate({
       right: '-450px'
     });
   });
