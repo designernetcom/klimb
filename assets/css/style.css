@@ -7775,7 +7775,7 @@ ul.nav-pills.tab-style-one .nav-link {
 }
 @media only screen and (max-width: 1199px) {
   .section-title h2 {
-    line-height: 1.1;
+    line-height: 1.2;
     font-size: 26px;
     letter-spacing: 1px;
 }
@@ -7939,11 +7939,11 @@ background:none !important;
 }
 
 /* side contact btn */
-.contact-btn{
+.contact-btn1{
   cursor: pointer;
   display: inline-block;
   position: fixed;
-  right: -65px;
+  right: -55px;
   top: 45%;
   z-index: 99;
   border: transparent;
@@ -7969,12 +7969,12 @@ background:none !important;
   box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.1);
   }
   
-  .contact-btn:hover .contact-bg {
+  .contact-btn1:hover .contact-bg {
     background: #000;
     color: #ffffff
   }
   
-  .contact-form {
+  .contact-form1 {
   background: #ffffff;
   height: 68%;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -7999,30 +7999,30 @@ background:none !important;
   }
   
  
-  .header-3 .contact-btn {
+  .header-3 .contact-btn1 {
   position: inherit;
   transform: inherit;
   top: inherit;
   right: inherit;
   border-radius: 10px;
   }
-  .contact-form h2{
+  .contact-form1 h2{
       font-weight: 600;
       color: #000;
       font-size: 29px;
       letter-spacing: 1px;
   }
-  .contact-form textarea{
+  .contact-form1 textarea{
     width: 100%;
     height: auto;
     padding: 0px 13px;
   }
-  .contact-form input{
+  .contact-form1 input{
     width: 100%;
     height: auto;
     padding: 0px 13px;
   }
-  .contact-form input::placeholder{
+  .contact-form1 input::placeholder{
    font-size: 15px;
   }
   
@@ -8041,9 +8041,9 @@ background:none !important;
       padding: 16px 0;
       display: none;
     }
-    .contact-form {
+    .contact-form1 {
       
-      height: 72%;
+      height: 65%;
     }
     .contact-info {
       padding: 38px;
