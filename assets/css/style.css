@@ -7258,16 +7258,18 @@ blockquote cite.name {
 }
 
 .footer-bottom .h4-rotate{
-  font-size: 30px;
-  color:var(--heading-color);
-  transform: rotate(-90deg);
-  position: absolute;
-  left: -132px;
-  bottom: 76px;
-  width: 210px;
-  height: 46px;
-  letter-spacing: 1.5px;
-  font-weight: 900;
+    font-size: 30px;
+    color: var(--heading-color);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -132px;
+    bottom: 76px;
+    width: 210px;
+    height: 46px;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 .footer-bottom .content .links li{
