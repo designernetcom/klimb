@@ -8050,6 +8050,12 @@ background:none !important;
       
       height: 65%;
     }
+    .contact-form1 {
+      width: 370px;
+    }
+    .contact-form1 h2 {
+      font-size: 26px;
+    }
     .footer-bottom .h4-rotate {
       font-size: 23px;
     }
