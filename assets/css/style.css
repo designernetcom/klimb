@@ -7258,19 +7258,16 @@ blockquote cite.name {
 }
 
 .footer-bottom .h4-rotate{
-    font-size: 30px;
-    color: var(--heading-color);
-/*     transform: rotate(-90deg); */
-    position: absolute;
-    left: -132px;
-    bottom: 76px;
-    width: 210px;
-    height: 46px;
-    letter-spacing: 1.5px;
-    font-weight: 900;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg); 
-
+  font-size: 30px;
+  color:var(--heading-color);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -132px;
+  bottom: 76px;
+  width: 210px;
+  height: 46px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
 }
 
 .footer-bottom .content .links li{
@@ -7335,12 +7332,9 @@ blockquote cite.name {
     margin-left: 48px;
   }
 
-
-    .footer-bottom .h4-rotate {
-        left: -87px;
-        font-size: 25px;
-    }
-
+  .footer-bottom .h4-rotate{
+    left: -87px;
+  }
 
   .footer-bottom-text{
     margin:0;
@@ -8052,6 +8046,9 @@ background:none !important;
     .contact-form1 {
       
       height: 65%;
+    }
+    .footer-bottom .h4-rotate {
+      font-size: 23px;
     }
     .contact-info {
       padding: 38px;
