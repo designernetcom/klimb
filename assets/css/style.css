@@ -7260,7 +7260,7 @@ blockquote cite.name {
 .footer-bottom .h4-rotate{
     font-size: 30px;
     color: var(--heading-color);
-    transform: rotate(-90deg);
+/*     transform: rotate(-90deg); */
     position: absolute;
     left: -132px;
     bottom: 76px;
@@ -7268,8 +7268,12 @@ blockquote cite.name {
     height: 46px;
     letter-spacing: 1.5px;
     font-weight: 900;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+/*     -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); */
+      -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
 }
 
 .footer-bottom .content .links li{
