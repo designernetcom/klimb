@@ -7335,9 +7335,12 @@ blockquote cite.name {
     margin-left: 48px;
   }
 
-  .footer-bottom .h4-rotate{
-    left: -87px;
-  }
+
+    .footer-bottom .h4-rotate {
+        left: -87px;
+        font-size: 25px;
+    }
+
 
   .footer-bottom-text{
     margin:0;
