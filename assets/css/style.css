@@ -7270,10 +7270,15 @@ blockquote cite.name {
     font-weight: 900;
 /*     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg); */
-      -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    -webkit-text-orientation: mixed;
-    text-orientation: mixed;
+    writing-mode: vertical-lr; /* Vertical Left-to-Right */
+    -webkit-writing-mode: vertical-lr; /* Safari/iOS support */
+    text-orientation: mixed; /* Mix of upright and rotated text */
+    -webkit-text-orientation: mixed; /* Safari/iOS support */
+    text-align: left; /* Aligns the text within its container */
+    direction: ltr; /* Left-to-right flow */
+    position: absolute; /* Optional for fine control */
+    left: 0; /* Align to the left edge */
+    top: 0; /* Adjust as needed */
 }
 
 .footer-bottom .content .links li{
